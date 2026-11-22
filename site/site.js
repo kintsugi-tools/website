@@ -1,4 +1,4 @@
-/* Kintsugi — cinematic site behavior. No framework, no build step. */
+/* Kintsugi, cinematic site behavior. No framework, no build step. */
 (function () {
   "use strict";
 

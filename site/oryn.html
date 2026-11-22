@@ -9,11 +9,11 @@
   <meta charset="utf-8">
   <script>document.documentElement.classList.add('js');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Oryn — Safe, Rust-native Cargo test acceleration</title>
+  <title>Oryn | Safe, Rust-native Cargo test acceleration</title>
   <meta name="description" content="Compile less, test less, trust the results. Oryn runs only the Cargo tests your change can affect, caches results soundly, and scores flaky tests with real statistics. No AI, no nightly.">
   <meta name="theme-color" content="#080a0e">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Oryn — Safe Cargo test acceleration">
+  <meta property="og:title" content="Oryn | Safe Cargo test acceleration">
   <meta property="og:description" content="Runs only the tests your change can affect, skips the ones it can prove unchanged, and never risks a wrong result.">
   <meta property="og:url" content="https://kintsugi.tools/oryn.html">
   <meta property="og:image" content="https://kintsugi.tools/og.svg">
@@ -63,7 +63,7 @@
     <!-- HERO -->
     <section class="phero">
       <div class="container phero-in">
-        <span class="hero-kicker"><i></i> 03 — Test acceleration</span>
+        <span class="hero-kicker"><i></i> 03 / Test acceleration</span>
         <h1 class="reveal reveal-up">Compile less. Test less. <br><span class="gold">Trust the results.</span></h1>
         <p class="lead reveal reveal-up" data-delay="80">Oryn is a safe, Rust-native accelerator for Cargo test suites. It runs only the tests your change can affect, skips the ones it can prove unchanged, and never trades correctness for speed.</p>
         <div class="phero-cmd reveal reveal-up" data-delay="140">
@@ -88,7 +88,7 @@
         <div class="section-head reveal">
           <span class="eyebrow on-dark">Speed without gambling</span>
           <h2>Fast because it's right.</h2>
-          <p class="lead">Most test speedups guess. Oryn proves — from the dependency graph, from content fingerprints, and from statistics.</p>
+          <p class="lead">Most test speedups guess. Oryn proves it from the dependency graph, from content fingerprints, and from statistics.</p>
         </div>
 
         <div class="metrics reveal" data-delay="80">
@@ -99,11 +99,11 @@
         </div>
 
         <div class="feature-rows">
-          <div class="feature-row reveal"><h3>Runs what your change can affect</h3><p>Oryn reads <span class="mono">git diff</span> to find the changed crates, then includes their dependents. Tests it can prove unchanged are skipped — not sampled, not guessed.</p></div>
+          <div class="feature-row reveal"><h3>Runs what your change can affect</h3><p>Oryn reads <span class="mono">git diff</span> to find the changed crates, then includes their dependents. Tests it can prove unchanged are skipped, not sampled, not guessed.</p></div>
           <div class="feature-row reveal"><h3>A cache that can't lie</h3><p>A BLAKE3 Merkle fingerprint covers the whole file closure, <span class="mono">Cargo.lock</span>, and the compiler version. If anything that matters changes, the result is invalidated.</p></div>
-          <div class="feature-row reveal"><h3>Flaky tests, scored honestly</h3><p>Wilson and Jeffreys credible intervals turn repeated runs into real probabilities, with a rerun budget derived from the math — and O(log n) bisection finds the culprit fast.</p></div>
+          <div class="feature-row reveal"><h3>Flaky tests, scored honestly</h3><p>Wilson and Jeffreys credible intervals turn repeated runs into real probabilities, with a rerun budget derived from the math, and O(log n) bisection finds the culprit fast.</p></div>
           <div class="feature-row reveal"><h3>Down to the function</h3><p><span class="mono">oryn cover</span> and <span class="mono">oryn test --fn</span> narrow selection further to the functions your diff actually touches.</p></div>
-          <div class="feature-row reveal"><h3>Fix the build, too</h3><p>The build doctor applies sane defaults — line-tables-only debug info, split debuginfo, a faster linker, and sccache wrapping — with <span class="mono">oryn tune --apply</span>. <span class="mono">oryn tui</span> gives you the whole picture.</p></div>
+          <div class="feature-row reveal"><h3>Fix the build, too</h3><p>The build doctor applies sane defaults: line-tables-only debug info, split debuginfo, a faster linker, and sccache wrapping, with <span class="mono">oryn tune --apply</span>. <span class="mono">oryn tui</span> gives you the whole picture.</p></div>
         </div>
       </div>
     </section>
@@ -119,7 +119,7 @@
         <div class="pfeatures">
           <div class="pfeature reveal reveal-up"><div class="num">01 / SELECT</div><h3>Follow the dependency graph</h3><p>Changed crates and their dependents run. Everything provably unchanged is skipped.</p></div>
           <div class="pfeature reveal reveal-up" data-delay="80"><div class="num">02 / CACHE</div><h3>Fingerprint the inputs</h3><p>A BLAKE3 Merkle fingerprint over the file closure, Cargo.lock, and rustc version decides what can be reused.</p></div>
-          <div class="pfeature reveal reveal-up" data-delay="160"><div class="num">03 / SCORE</div><h3>Measure flakiness</h3><p>Credible intervals and a derived rerun budget turn flaky behavior into real statistics — then bisect to the culprit.</p></div>
+          <div class="pfeature reveal reveal-up" data-delay="160"><div class="num">03 / SCORE</div><h3>Measure flakiness</h3><p>Credible intervals and a derived rerun budget turn flaky behavior into real statistics, then bisect to the culprit.</p></div>
         </div>
       </div>
     </section>
@@ -145,7 +145,7 @@
         </div>
         <div class="reveal reveal-scale" data-delay="100">
           <div class="term">
-            <div class="term-bar"><i class="term-dot"></i><i class="term-dot"></i><i class="term-dot"></i><span class="term-title">terminal — first run</span></div>
+            <div class="term-bar"><i class="term-dot"></i><i class="term-dot"></i><i class="term-dot"></i><span class="term-title">terminal / first run</span></div>
             <div class="term-body">
 <div><span class="c-dim">$</span> oryn tune --apply</div>
 <div><span class="c-green">✓</span> <span class="c-fg">debug = line-tables-only</span></div>

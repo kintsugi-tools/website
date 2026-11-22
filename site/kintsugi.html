@@ -9,11 +9,11 @@
   <meta charset="utf-8">
   <script>document.documentElement.classList.add('js');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kintsugi — Safety for AI coding agents</title>
+  <title>Kintsugi | Safety for AI coding agents</title>
   <meta name="description" content="A deterministic safety layer between AI coding agents and your shell. Destructive commands are held, explained, and reversible with one command. 100% local.">
   <meta name="theme-color" content="#080a0e">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kintsugi — Safety for AI coding agents">
+  <meta property="og:title" content="Kintsugi | Safety for AI coding agents">
   <meta property="og:description" content="Warn before destructive commands. Undo in one command. Tamper-evident, hash-chained record. 100% local.">
   <meta property="og:url" content="https://kintsugi.tools/kintsugi.html">
   <meta property="og:image" content="https://kintsugi.tools/og.svg">
@@ -63,9 +63,9 @@
     <!-- HERO -->
     <section class="phero">
       <div class="container phero-in">
-        <span class="hero-kicker"><i></i> 01 — Safety for AI agents</span>
+        <span class="hero-kicker"><i></i> 01 / Safety for AI agents</span>
         <h1 class="reveal reveal-up">Your agent has shell access. <br><span class="gold">Give it a conscience.</span></h1>
-        <p class="lead reveal reveal-up" data-delay="80">Kintsugi sits between your AI coding agent and the shell. Destructive commands are caught before they run, held for your approval, and made reversible — locally, every time.</p>
+        <p class="lead reveal reveal-up" data-delay="80">Kintsugi sits between your AI coding agent and the shell. Destructive commands are caught before they run, held for your approval, and made reversible, locally, every time.</p>
         <div class="phero-cmd reveal reveal-up" data-delay="140">
           <div class="cmd">
             <code><span class="prompt">$ </span>curl -fsSL https://kintsugi.tools/install.sh | sh</code>
@@ -98,10 +98,10 @@
         </div>
 
         <div class="feature-rows">
-          <div class="feature-row reveal"><h3>Deterministic by design</h3><p>Every safety decision comes from deterministic rules. A model may explain what a command does — it never decides whether the command is allowed. No judgment calls, no drift.</p></div>
-          <div class="feature-row reveal"><h3>It reads the command, not keywords</h3><p>A two-pass bash AST parser and tokenizer understand what a command actually does — including pipelines, substitutions, and obfuscation — instead of pattern-matching strings.</p></div>
-          <div class="feature-row reveal"><h3>Held when it can't be sure</h3><p>Ambiguous commands are held, never waved through. Kintsugi fails toward caution and never labels a catastrophic action as safe — <span class="mono">rm -rf</span>, <span class="mono">DROP TABLE</span>, <span class="mono">git push --force</span>, <span class="mono">terraform destroy</span>, <span class="mono">dd</span>, <span class="mono">mkfs</span>, secret reads, and more.</p></div>
-          <div class="feature-row reveal"><h3>Undo is a command away</h3><p>Copy-on-write snapshots capture what a command will touch. If something goes wrong, <span class="mono">kintsugi undo</span> puts it back — no backup ritual, no guesswork.</p></div>
+          <div class="feature-row reveal"><h3>Deterministic by design</h3><p>Every safety decision comes from deterministic rules. A model may explain what a command does, but it never decides whether the command is allowed. No judgment calls, no drift.</p></div>
+          <div class="feature-row reveal"><h3>It reads the command, not keywords</h3><p>A two-pass bash AST parser and tokenizer understand what a command actually does, including pipelines, substitutions, and obfuscation, instead of pattern-matching strings.</p></div>
+          <div class="feature-row reveal"><h3>Held when it can't be sure</h3><p>Ambiguous commands are held, never waved through. Kintsugi fails toward caution and never labels a catastrophic action as safe: <span class="mono">rm -rf</span>, <span class="mono">DROP TABLE</span>, <span class="mono">git push --force</span>, <span class="mono">terraform destroy</span>, <span class="mono">dd</span>, <span class="mono">mkfs</span>, secret reads, and more.</p></div>
+          <div class="feature-row reveal"><h3>Undo is a command away</h3><p>Copy-on-write snapshots capture what a command will touch. If something goes wrong, <span class="mono">kintsugi undo</span> puts it back, with no backup ritual and no guesswork.</p></div>
           <div class="feature-row reveal"><h3>A record you can't quietly edit</h3><p>An append-only, hash-chained log in SQLite records every decision. Tampering with an entry breaks the chain, so you can trust the audit trail.</p></div>
           <div class="feature-row reveal"><h3>Your agent, your rules</h3><p>A PATH shim and hooks work with Claude Code, Cursor, Codex, Qwen, Gemini, Copilot, OpenCode, and Google Antigravity. <span class="mono">kintsugi test</span>, <span class="mono">dry-run</span>, <span class="mono">guard</span>, and <span class="mono">limits</span> let you tune the edge before you trust it.</p></div>
         </div>
@@ -117,7 +117,7 @@
           <p class="lead">Three steps, all on your machine, every time your agent reaches for a command.</p>
         </div>
         <div class="pfeatures">
-          <div class="pfeature reveal reveal-up"><div class="num">01 / PARSE</div><h3>Understand the command</h3><p>A bash AST parser and tokenizer read what the command actually does — not just the words it contains.</p></div>
+          <div class="pfeature reveal reveal-up"><div class="num">01 / PARSE</div><h3>Understand the command</h3><p>A bash AST parser and tokenizer read what the command actually does, not just the words it contains.</p></div>
           <div class="pfeature reveal reveal-up" data-delay="80"><div class="num">02 / DECIDE</div><h3>Apply deterministic rules</h3><p>Catastrophic actions are held. Ambiguous ones are held too. Nothing dangerous is ever waved through.</p></div>
           <div class="pfeature reveal reveal-up" data-delay="160"><div class="num">03 / RECORD</div><h3>Snapshot, log, allow</h3><p>A copy-on-write snapshot and hash-chained log entry are created before the command runs. Undo stays one command away.</p></div>
         </div>
@@ -147,7 +147,7 @@
         </div>
         <div class="reveal reveal-scale" data-delay="100">
           <div class="term">
-            <div class="term-bar"><i class="term-dot"></i><i class="term-dot"></i><i class="term-dot"></i><span class="term-title">terminal — after install</span></div>
+            <div class="term-bar"><i class="term-dot"></i><i class="term-dot"></i><i class="term-dot"></i><span class="term-title">terminal / after install</span></div>
             <div class="term-body">
 <div><span class="c-dim">$</span> kintsugi init</div>
 <div><span class="c-green">✓</span> <span class="c-fg">shell shim installed</span></div>
@@ -158,7 +158,7 @@
 <div><span class="c-gold">◆</span> <span class="c-fg">would hold: destructive-delete</span></div>
             </div>
           </div>
-          <p class="install-note">Enterprise controls — admin lock, passive recorder, TUI, and Control Room — are available for teams that need centralized policy.</p>
+          <p class="install-note">Enterprise controls (admin lock, passive recorder, TUI, and Control Room) are available for teams that need centralized policy.</p>
         </div>
       </div>
     </section>
