@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kintsugi — Safety for AI coding agents</title>
+  <meta name="description" content="A deterministic safety layer between AI coding agents and your shell. Destructive commands are held, explained, and reversible with one command. 100% local.">
+  <meta name="theme-color" content="#080a0e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kintsugi — Safety for AI coding agents">
+  <meta property="og:description" content="Warn before destructive commands. Undo in one command. Tamper-evident, hash-chained record. 100% local.">
+  <meta property="og:url" content="https://kintsugi.tools/kintsugi.html">
+  <meta property="og:image" content="https://kintsugi.tools/og.svg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script defer src="site.js"></script>
+  {G_ANALYTICS_TAG}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-in">
+      <a class="brand" href="index.html" aria-label="Kintsugi home">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M32 3 55 16.5 55 47.5 32 61 9 47.5 9 16.5Z" stroke="currentColor" stroke-opacity="0.42" stroke-width="1.4"/><path d="M32 3 9 16.5 9 47.5 32 61 26 44 35 29 27 15Z" fill="currentColor" fill-opacity="0.14"/><path d="M32 3 55 16.5 55 47.5 32 61 26 44 35 29 27 15Z" fill="currentColor" fill-opacity="0.07"/><path d="M32 3 27 15 35 29 26 44 32 61" stroke="#D4AF37" stroke-opacity="0.22" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 3 27 15 35 29 26 44 32 61" stroke="#D4AF37" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 29 45 22 49 14" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 29 46 36 51 47" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 3 27 15 35 29 26 44 32 61" stroke="#FFF3CE" stroke-opacity="0.75" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/><g fill="#F6DC8A"><circle cx="27" cy="15" r="2.1"/><circle cx="35" cy="29" r="2.8"/><circle cx="26" cy="44" r="2.1"/><circle cx="49" cy="14" r="1.4"/><circle cx="51" cy="47" r="1.4"/></g></svg>
+        <span>kintsugi</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#products">Products</a>
+        <a href="kintsugi.html" aria-current="page">Kintsugi</a>
+        <a href="paperscope.html">Paper</a>
+        <a href="oryn.html">Oryn</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header-right">
+        <button class="btn btn-ghost btn-sm" data-theme-toggle aria-label="Switch to dark theme" title="Toggle theme">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.7 6.7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <a class="btn btn-dark btn-sm" href="#install">Install <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="phero">
+      <div class="container phero-in">
+        <span class="hero-kicker"><i></i> 01 — Safety for AI agents</span>
+        <h1 class="reveal reveal-up">Your agent has shell access.<br><span class="gold">Give it a conscience.</span></h1>
+        <p class="lead reveal reveal-up" data-delay="80">Kintsugi sits between your AI coding agent and the shell. Destructive commands are caught before they run, held for your approval, and made reversible — locally, every time.</p>
+        <div class="phero-cmd reveal reveal-up" data-delay="140">
+          <div class="cmd">
+            <code><span class="prompt">$ </span>curl -fsSL https://kintsugi.tools/install.sh | sh</code>
+            <button type="button" data-copy="curl -fsSL https://kintsugi.tools/install.sh | sh" aria-label="Copy install command">Copy</button>
+          </div>
+        </div>
+        <p class="cmd-caption center">macOS · Linux · <span class="mono">kintsugi init</span> to finish setup</p>
+        <div class="phero-trust"><span>100% local</span><span>No telemetry</span><span>MIT OR Apache-2.0</span></div>
+
+        <div class="phero-stage reveal reveal-scale" data-delay="180">
+          <video class="clip" data-src="assets/kintsugi-approval.mp4" poster="assets/poster-kintsugi.svg" muted loop playsinline preload="none" aria-label="Kintsugi approval queue clip"></video>
+          <img class="clip-poster" src="assets/poster-kintsugi.svg" alt="Kintsugi holding a destructive command for approval">
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="section dark-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow on-dark">The assurance record</span>
+          <h2>Safety you can measure.</h2>
+        </div>
+
+        <div class="metrics reveal" data-delay="80">
+          <div class="metric"><div class="metric-n">0 / 176</div><div class="metric-l">dangerous commands leaked past the guard</div></div>
+          <div class="metric"><div class="metric-n" data-count="1.4" data-suffix="M">1.4M</div><div class="metric-l">fuzz inputs, no crash</div></div>
+          <div class="metric"><div class="metric-n" data-count="0">0</div><div class="metric-l">known CVEs</div></div>
+          <div class="metric"><div class="metric-n" data-count="0">0</div><div class="metric-l">commands marked safe that were unsafe</div></div>
+        </div>
+
+        <div class="feature-rows">
+          <div class="feature-row reveal"><h3>Deterministic by design</h3><p>Every safety decision comes from deterministic rules. A model may explain what a command does — it never decides whether the command is allowed. No judgment calls, no drift.</p></div>
+          <div class="feature-row reveal"><h3>It reads the command, not keywords</h3><p>A two-pass bash AST parser and tokenizer understand what a command actually does — including pipelines, substitutions, and obfuscation — instead of pattern-matching strings.</p></div>
+          <div class="feature-row reveal"><h3>Held when it can't be sure</h3><p>Ambiguous commands are held, never waved through. Kintsugi fails toward caution and never labels a catastrophic action as safe — <span class="mono">rm -rf</span>, <span class="mono">DROP TABLE</span>, <span class="mono">git push --force</span>, <span class="mono">terraform destroy</span>, <span class="mono">dd</span>, <span class="mono">mkfs</span>, secret reads, and more.</p></div>
+          <div class="feature-row reveal"><h3>Undo is a command away</h3><p>Copy-on-write snapshots capture what a command will touch. If something goes wrong, <span class="mono">kintsugi undo</span> puts it back — no backup ritual, no guesswork.</p></div>
+          <div class="feature-row reveal"><h3>A record you can't quietly edit</h3><p>An append-only, hash-chained log in SQLite records every decision. Tampering with an entry breaks the chain, so you can trust the audit trail.</p></div>
+          <div class="feature-row reveal"><h3>Your agent, your rules</h3><p>A PATH shim and hooks work with Claude Code, Cursor, Codex, Qwen, Gemini, Copilot, OpenCode, and Google Antigravity. <span class="mono">kintsugi test</span>, <span class="mono">dry-run</span>, <span class="mono">guard</span>, and <span class="mono">limits</span> let you tune the edge before you trust it.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>Between the thought and the shell.</h2>
+          <p class="lead">Three steps, all on your machine, every time your agent reaches for a command.</p>
+        </div>
+        <div class="pfeatures">
+          <div class="pfeature reveal reveal-up"><div class="num">01 / PARSE</div><h3>Understand the command</h3><p>A bash AST parser and tokenizer read what the command actually does — not just the words it contains.</p></div>
+          <div class="pfeature reveal reveal-up" data-delay="80"><div class="num">02 / DECIDE</div><h3>Apply deterministic rules</h3><p>Catastrophic actions are held. Ambiguous ones are held too. Nothing dangerous is ever waved through.</p></div>
+          <div class="pfeature reveal reveal-up" data-delay="160"><div class="num">03 / RECORD</div><h3>Snapshot, log, allow</h3><p>A copy-on-write snapshot and hash-chained log entry are created before the command runs. Undo stays one command away.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTALL -->
+    <section class="section" id="install" style="background:var(--surface); border-top:1px solid var(--border);">
+      <div class="container install-band">
+        <div class="reveal">
+          <span class="eyebrow">Install</span>
+          <h2 style="margin-top:18px;">One command. Then <span class="mono" style="font-size:0.72em;letter-spacing:-0.03em;">kintsugi init</span>.</h2>
+          <p class="lead" style="margin-top:20px;">The installer puts the guard on your PATH and <span class="mono">kintsugi init</span> wires it into the agents you use. No account, no daemon phoning home.</p>
+          <div style="margin-top:28px;">
+            <div class="cmd">
+              <code><span class="prompt">$ </span>curl -fsSL https://kintsugi.tools/install.sh | sh</code>
+              <button type="button" data-copy="curl -fsSL https://kintsugi.tools/install.sh | sh" aria-label="Copy install command">Copy</button>
+            </div>
+            <p class="cmd-caption">Copied exactly · runs locally</p>
+          </div>
+          <div style="margin-top:14px;">
+            <div class="cmd">
+              <code><span class="prompt">$ </span>kintsugi init</code>
+              <button type="button" data-copy="kintsugi init" aria-label="Copy init command">Copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-scale" data-delay="100">
+          <div class="term">
+            <div class="term-bar"><i class="term-dot"></i><i class="term-dot"></i><i class="term-dot"></i><span class="term-title">terminal — after install</span></div>
+            <div class="term-body">
+<div><span class="c-dim">$</span> kintsugi init</div>
+<div><span class="c-green">✓</span> <span class="c-fg">shell shim installed</span></div>
+<div><span class="c-green">✓</span> <span class="c-fg">agent hooks detected: claude, codex</span></div>
+<div><span class="c-green">✓</span> <span class="c-fg">snapshot volume ready</span></div>
+<div><span class="c-green">✓</span> <span class="c-fg">audit log initialized</span></div>
+<div style="margin-top:10px;"><span class="c-dim">$</span> <span class="c-fg">kintsugi test -- claude 'rm -rf ./build'</span></div>
+<div><span class="c-gold">◆</span> <span class="c-fg">would hold: destructive-delete</span></div>
+            </div>
+          </div>
+          <p class="install-note">Enterprise controls — admin lock, passive recorder, TUI, and Control Room — are available for teams that need centralized policy.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M32 3 55 16.5 55 47.5 32 61 9 47.5 9 16.5Z" stroke="currentColor" stroke-opacity="0.42" stroke-width="1.4"/><path d="M32 3 9 16.5 9 47.5 32 61 26 44 35 29 27 15Z" fill="currentColor" fill-opacity="0.14"/><path d="M32 3 55 16.5 55 47.5 32 61 26 44 35 29 27 15Z" fill="currentColor" fill-opacity="0.07"/><path d="M32 3 27 15 35 29 26 44 32 61" stroke="#D4AF37" stroke-opacity="0.22" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 3 27 15 35 29 26 44 32 61" stroke="#D4AF37" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 29 45 22 49 14" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 29 46 36 51 47" stroke="#D4AF37" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 3 27 15 35 29 26 44 32 61" stroke="#FFF3CE" stroke-opacity="0.75" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/><g fill="#F6DC8A"><circle cx="27" cy="15" r="2.1"/><circle cx="35" cy="29" r="2.8"/><circle cx="26" cy="44" r="2.1"/><circle cx="49" cy="14" r="1.4"/><circle cx="51" cy="47" r="1.4"/></g></svg><span>kintsugi</span></a>
+          <p>Local-first developer tools. Built to keep your work safe, your data yours, and your loop fast.</p>
+        </div>
+        <div class="footer-col"><h4>Products</h4><a href="kintsugi.html">Kintsugi</a><a href="paperscope.html">Paper</a><a href="oryn.html">Oryn</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="https://github.com/kintsugi-tools" rel="noopener">GitHub</a><a href="https://kintsugi.tools">kintsugi.tools</a></div>
+        <div class="footer-col"><h4>Principles</h4><a href="index.html#why-local-first">Local-first</a><a href="index.html">No telemetry</a><a href="about.html">Open source</a></div>
+      </div>
+      <div class="footer-bottom"><span>MIT OR Apache-2.0 · Local-first · No telemetry</span><span>© Kintsugi</span></div>
+    </div>
+  </footer>
+</body>
+</html>

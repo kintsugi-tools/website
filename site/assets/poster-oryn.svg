@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-label="Oryn TUI run summary">
+  <rect width="960" height="540" fill="#0a0f16"/>
+  <rect x="80" y="58" width="800" height="424" rx="14" fill="#131b26" stroke="#26313f"/>
+  <rect x="80" y="58" width="800" height="48" rx="14" fill="#101720"/>
+  <rect x="80" y="94" width="800" height="12" fill="#101720"/>
+  <circle cx="108" cy="82" r="6" fill="#34404f"/><circle cx="130" cy="82" r="6" fill="#34404f"/><circle cx="152" cy="82" r="6" fill="#34404f"/>
+  <text x="176" y="89" fill="#93a1b3" font-family="ui-monospace, Menlo, monospace" font-size="14">oryn tui — run summary</text>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="17">
+    <text x="110" y="150" fill="#e6edf3">oryn</text><text x="158" y="150" fill="#71827e">· workspace / 14 crates</text>
+    <text x="110" y="194" fill="#56d38a">✓</text><text x="138" y="194" fill="#71827e">selected</text><text x="234" y="194" fill="#e6edf3">38 tests · 3 crates changed + dependents</text>
+    <text x="110" y="228" fill="#71827e">○</text><text x="138" y="228" fill="#71827e">skipped</text><text x="234" y="228" fill="#71827e">1,101 proven unchanged</text>
+    <text x="110" y="262" fill="#e6c458">≈</text><text x="138" y="262" fill="#71827e">cache hit</text><text x="234" y="262" fill="#e6edf3">12 results, fingerprint valid</text>
+    <text x="110" y="310" fill="#71827e">suite</text><text x="234" y="310" fill="#56d38a">92.1s → 0.074s</text><text x="390" y="310" fill="#e6c458">~1,245×</text>
+    <text x="110" y="344" fill="#71827e">result</text><text x="234" y="344" fill="#56d38a">all passed · no risk to correctness</text><rect x="560" y="331" width="9" height="17" fill="#e6c458"/>
+  </g>
+  <rect x="110" y="390" width="740" height="7" rx="3.5" fill="#26313f"/>
+  <rect x="110" y="390" width="740" height="7" rx="3.5" fill="#a9761b"/>
+  <rect x="600" y="390" width="250" height="7" rx="3.5" fill="#e6c458"/>
+</svg>

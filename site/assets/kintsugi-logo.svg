@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 96" width="400" height="96" role="img" aria-labelledby="title">
+  <title id="title">Kintsugi — local-first developer tools</title>
+  <defs>
+    <linearGradient id="gold" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6DC8A"/><stop offset="0.5" stop-color="#D4AF37"/><stop offset="1" stop-color="#9C6F1C"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1C232D"/><stop offset="1" stop-color="#080A0E"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.7"/></filter>
+  </defs>
+  <g transform="translate(6 16)">
+    <path d="M32 3 55 16.5 55 47.5 32 61 9 47.5 9 16.5Z" fill="url(#ink)" stroke="#2B343F" stroke-width="0.9"/>
+    <path d="M32 3 9 16.5 9 47.5 32 61 26 44 35 29 27 15Z" fill="#FFFFFF" fill-opacity="0.05"/>
+    <path d="M32 3 27 15 35 29 26 44 32 61" fill="none" stroke="#D4AF37" stroke-opacity="0.5" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <path d="M32 3 27 15 35 29 26 44 32 61" fill="none" stroke="url(#gold)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M35 29 45 22 49 14" fill="none" stroke="url(#gold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M35 29 46 36 51 47" fill="none" stroke="url(#gold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 3 27 15 35 29 26 44 32 61" fill="none" stroke="#FFF3CE" stroke-opacity="0.75" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="url(#gold)"><circle cx="27" cy="15" r="2.1"/><circle cx="35" cy="29" r="2.8"/><circle cx="26" cy="44" r="2.1"/><circle cx="49" cy="14" r="1.4"/><circle cx="51" cy="47" r="1.4"/></g>
+  </g>
+  <text x="94" y="54" font-family="'Avenir Next','SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="3" fill="#0B0D12">KINTSUGI</text>
+  <path d="M94 64 H180 L188 61 L196 67 H342" fill="none" stroke="url(#gold)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="96" y="82" font-family="ui-monospace,'JetBrains Mono',Menlo,Consolas,monospace" font-size="10.5" letter-spacing="2.1" fill="#6B7280">LOCAL-FIRST DEVELOPER TOOLS</text>
+</svg>
