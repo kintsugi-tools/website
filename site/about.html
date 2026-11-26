@@ -3,7 +3,7 @@
 <head>
   <script>
     // Set the theme before first paint: no flash for dark-mode readers.
-    try { if (localStorage.getItem("kintsugi-theme") === "dark") document.documentElement.setAttribute("data-theme", "dark"); } catch (e) {}
+    try { if ((localStorage.getItem("kintsugi-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "")) === "dark") document.documentElement.setAttribute("data-theme", "dark"); } catch (e) {}
   </script>
 
   <meta charset="utf-8">

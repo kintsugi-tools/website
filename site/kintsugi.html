@@ -3,7 +3,7 @@
 <head>
   <script>
     // Set the theme before first paint: no flash for dark-mode readers.
-    try { if (localStorage.getItem("kintsugi-theme") === "dark") document.documentElement.setAttribute("data-theme", "dark"); } catch (e) {}
+    try { if ((localStorage.getItem("kintsugi-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "")) === "dark") document.documentElement.setAttribute("data-theme", "dark"); } catch (e) {}
   </script>
 
   <meta charset="utf-8">
@@ -137,6 +137,17 @@
               <button type="button" data-copy="curl -fsSL https://kintsugi.tools/install.sh | sh" aria-label="Copy install command">Copy</button>
             </div>
             <p class="cmd-caption">Copied exactly · runs locally</p>
+            <p class="cmd-alt-label">or install from</p>
+            <div class="cmd-alt">
+              <div class="cmd">
+                <code><span class="prompt">$ </span>brew install kintsugi-tools/tap/kintsugi</code>
+                <button type="button" data-copy="brew install kintsugi-tools/tap/kintsugi" aria-label="Copy the Homebrew install command">Copy</button>
+              </div>
+              <div class="cmd">
+                <code><span class="prompt">$ </span>cargo install kintsugi</code>
+                <button type="button" data-copy="cargo install kintsugi" aria-label="Copy the cargo install command">Copy</button>
+              </div>
+            </div>
           </div>
           <div style="margin-top:14px;">
             <div class="cmd">
