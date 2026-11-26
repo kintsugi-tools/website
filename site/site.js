@@ -257,7 +257,27 @@
     label();
   }
 
+  /* ---------- Mobile menu ---------- */
+  function bindNav() {
+    var btn = document.querySelector(".nav-toggle");
+    var nav = document.getElementById("site-nav");
+    if (!btn || !nav) return;
+    function set(open, refocus) {
+      nav.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      if (refocus) btn.focus();
+    }
+    btn.addEventListener("click", function () { set(btn.getAttribute("aria-expanded") !== "true"); });
+    nav.addEventListener("click", function (e) { if (e.target.closest("a")) set(false); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && btn.getAttribute("aria-expanded") === "true") set(false, true);
+    });
+    matchMedia("(min-width: 721px)").addEventListener("change", function (e) { if (e.matches) set(false); });
+  }
+
   function init() {
+    bindNav();
     bindCopy(document);
     bindReveals();
     bindChapterVisuals();
