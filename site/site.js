@@ -241,7 +241,7 @@
     var btn = document.querySelector("[data-theme-toggle]");
     if (!btn) return;
     try {
-      if (localStorage.getItem("kintsugi-theme") === "dark") document.documentElement.setAttribute("data-theme", "dark");
+      if ((localStorage.getItem("kintsugi-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "")) === "dark") document.documentElement.setAttribute("data-theme", "dark");
     } catch (e) { /* no-op */ }
     function label() {
       var dark = document.documentElement.getAttribute("data-theme") === "dark";
